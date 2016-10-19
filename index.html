@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>intersection_observer testing</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .blank {
+      min-height: 100vh;
+      text-align: right;
+    }
+
+    .blank:nth-of-type(even) {
+      background-color: #ddd;
+    }
+
+    .box {
+      width: 50px;
+      height: 50px;
+      background-color: #f00;
+    }
+
+    .nav {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+    }
+
+    .nav a {
+      text-decoration: none;
+      color: #555;
+      font-size: 20px;
+    }
+
+    .nav a.active {
+      color: #f00;
+    }
+  </style>
+</head>
+<body>
+  <div id="nav" class="nav">
+    <a href="javascript:;" data-nav="section1">section1</a>
+    <a href="javascript:;" data-nav="section2">section2</a>
+    <a href="javascript:;" data-nav="section3">section3</a>
+    <a href="javascript:;" data-nav="section4">section4</a>
+    <a href="javascript:;" data-nav="section5">section5</a>
+  </div>
+  <div class="blank" data-section="section1">section1</div>
+  <div class="blank" data-section="section2">section2</div>
+  <div class="blank" data-section="section3">section3</div>
+  <div class="blank" data-section="section4">section4</div>
+  <div class="blank" data-section="section5">section5</div>
+
+  <script src="build/index.js"></script>
+</body>
+</html>
